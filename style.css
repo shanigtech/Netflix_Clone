@@ -1,0 +1,660 @@
+:root {
+  --primary: #E62E2D;  
+}
+
+body {
+  color: white;
+  background-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Martel Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url('./assets/images/bg.png');
+  height: 100vh;
+  max-height: 1000px;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  box-shadow: 20px 20px 100px #0F193B;
+}
+
+.main .box  {
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  max-width: 1700px;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+  height: 85px;
+  padding: 0 10px;
+}
+
+nav button {
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  width: 72px;
+  height: 31px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.main .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 85px);
+  width: 100%;
+}
+
+.container .hero {
+  max-width: 70%;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.hero > :first-child {
+  font-size: 56px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 70px;
+}
+
+.hero > :nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hero > :nth-child(3) {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.hero > :nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 55px;
+  width: 62%;
+}
+
+.hero > :nth-child(4) .input-outer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.hero > :nth-child(4) .input-outer label {
+  position: absolute;
+  left: 18px;
+  top: 17px;
+  color: #fffc;
+  transform: translateX(-50%, -50%);
+  transition: all .2s ease;
+}
+
+.hero > :nth-child(4) .input-outer input {
+  height: 100%;
+  width: 100%;
+  min-width: 300px;
+  outline: none;
+  border: 1px solid #5E5E5E;
+  border-radius: 5px;
+  background-color: #0007;
+  padding: 5px 15px 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.hero > :nth-child(4) .input-outer input:focus {
+  outline: 2px solid white;
+}
+
+.hero > :nth-child(4) .input-outer input:focus ~ label,
+.hero > :nth-child(4) .input-outer input:not(:placeholder-shown) ~ label {
+  top: 0px;
+  left: 17px;
+  font-size: 11px;
+  color: #fffa;
+}
+
+.hero > :nth-child(4) button {
+  height: 100%;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  text-wrap: nowrap;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero > :nth-child(4) button img {
+  margin-bottom: 3px;
+}
+/* Main Completed */
+
+.saperation {
+  height: 5px;
+  background-image: linear-gradient(to right, #d43e82, #E42E2D, #ec1f7b);
+}
+
+/* Trending Section */
+section {
+  width: 80vw;
+  max-width: 1700px;
+  margin: auto;
+  padding: 50px 10px 20px 10px;
+}
+
+footer {
+  width: 80vw;
+  max-width: 1700px;
+  margin: auto;
+}
+
+section h4 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -.5px;
+}
+
+section.trending .container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 15px 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+section.trending .container::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+section.trending .container::-webkit-scrollbar-track {
+  background: #413f3f65; /* Track background */
+  border-radius: 10px;
+}
+
+section.trending .container::-webkit-scrollbar-thumb {
+  background: #e42d2dd7; /* Thumb color */
+  border-radius: 10px;
+}
+
+section.trending .container::-webkit-scrollbar-thumb:hover {
+  background: #E42E2D; /* Thumb on hover */
+}
+
+section.trending .container .trending-card {
+  position: relative;
+  height: 270px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+section.trending .container .trending-card:hover {
+  transform: scale(1.03);
+}
+
+section.trending .container .trending-card img {
+  border-radius: 10px;
+  height: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+section.trending .container .trending-card .counter {
+  position: absolute;
+  bottom: 10px;
+  left: -25px;
+  font-size: 100px;
+  font-weight: 700;
+  color: black;
+  line-height: 100px;
+  -webkit-text-stroke: 2px white; /* Outline thickness and color */
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+/* Why to Join Section */
+section.joining-reasons .container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+section.joining-reasons .container .reason-card {
+  width: 23.5%;
+  height: 320px;
+  border-radius: 10px;
+  padding: 17px;
+  position: relative;
+  background-image: linear-gradient(145deg, #1A2245, #210E18);
+}
+
+section.joining-reasons .container .reason-card h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 17px;
+}
+
+section.joining-reasons .container .reason-card span:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+section.joining-reasons .container .reason-card span:nth-child(3) {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+section.joining-reasons .container .reason-card span:nth-child(3) img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* FAQ */
+section.faq .container {
+  padding-top: 15px;
+}
+
+section.faq .container .faq-item {
+  margin-bottom: 10px;
+}
+
+section.faq .container .faq-item .question {
+  margin: 1px;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: #2D2D2D;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  letter-spacing: -.3px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+section.faq .container .faq-item .question span {
+  user-select: none;
+  -webkit-user-drag: none;
+  
+}
+
+section.faq .container .faq-item .question span:nth-child(2) img {
+  padding-top: 8px;
+}
+
+section.faq .container .faq-item .question:hover {
+  background-color: #414141;
+}
+
+section.faq .container .faq-item .answer {
+  margin: 1px;
+  padding: 12px 25px;
+  background-color: #2D2D2D;
+  display: none;
+}
+
+/* Subscription Section */
+.subscription {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.subscription > div > div:first-child {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.subscription > div > div:nth-child(2) {
+  width: 800px;
+  max-width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.subscription .input-outer {
+  position: relative;
+  height: 100%;
+  width: 69%;
+}
+
+.subscription .input-outer label {
+  position: absolute;
+  left: 18px;
+  top: 17px;
+  color: #fffc;
+  transform: translateX(-50%, -50%);
+  transition: all .2s ease;
+  cursor: text;
+}
+
+.subscription .input-outer input {
+  height: 100%;
+  width: 100%;
+  min-width: 300px;
+  outline: none;
+  border: 1px solid #5E5E5E;
+  border-radius: 5px;
+  background-color: #0007;
+  padding: 10px 15px 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.subscription .input-outer input:focus {
+  outline: 2px solid white;
+}
+
+.subscription .input-outer input:focus ~ label,
+.subscription .input-outer input:not(:placeholder-shown) ~ label {
+  top: 3px;
+  left: 17px;
+  font-size: 11px;
+  color: #fffa;
+}
+
+.subscription button {
+  width: 29%;
+  height: 100%;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  outline: none;
+  /* padding: 0 20px; */
+  text-wrap: nowrap;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.subscription button img {
+  margin-bottom: 3px;
+}
+
+/* Footer Starts */
+footer {
+  padding: 50px 10px 100px 10px;
+}
+
+footer a {
+  color: #ffffffb3;
+}
+
+footer > div {
+  width: 80%;
+  margin: auto;
+}
+
+footer > div > span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: block;
+}
+
+footer > div > table {
+  width: 100%;
+}
+
+footer > div > table tr {
+  height: 20px;
+}
+
+footer > div > button {
+  background-color: #0F0F0F;
+  border: 1px solid #ffffff55;
+  outline: none;
+  width: 120px;
+  height: 34px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  margin: 20px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer > div > button span {
+  margin-bottom: -3px;
+}
+
+footer > div > h1 {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  opacity: .6;
+}
+
+/* Responsiveness */
+@media (max-width: 800px) {
+  nav {
+    width: 90vw;
+    height: 73px;
+  }
+  nav span img {
+    width: 100px;
+  }
+
+  .container .hero {
+    gap: 10px;
+  }
+  .hero > :first-child {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 17px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 14px;
+  }
+
+  section, footer {
+    width: 90%;
+  }
+  section h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  section.trending .container .trending-card {
+    height: 180px;
+  }
+  section.trending .container::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  section.joining-reasons .container {
+    flex-wrap: wrap;
+  }
+  section.joining-reasons .container .reason-card {
+    height: 167px;
+    width: 100%
+  }
+  section.joining-reasons .container .reason-card h5 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  section.joining-reasons .container .reason-card span:nth-child(3) {
+    right: 30px;
+  }
+  section.joining-reasons .container .reason-card span:nth-child(3) img {
+    width: 50px;
+  }
+
+  section.faq .container .faq-item .question {
+    font-size: 18px;
+  }
+
+  .subscription button {
+    font-size: 18px;
+  }
+  .subscription button img {
+    width: 18px;
+  }
+
+  footer > div {
+    width: 100%;
+  }
+  footer > div > table {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    height: 550px;
+  }
+
+  nav {
+    height: 60px;
+  }
+  nav button {
+    font-size: 13px;
+    width: 60px;
+    height: 30px;
+  }
+  nav span img {
+    width: 80px;
+  }
+
+  .container .hero {
+    max-width: 90%;
+    padding-bottom: 50px;
+  }
+  .hero > :first-child {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 14px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .hero > :nth-child(4) {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .hero > :nth-child(4) .input-outer {
+    height: auto;
+  }
+  .hero > :nth-child(4) .input-outer input {
+    height: 55px;
+    padding-top: 7px;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .hero > :nth-child(4) .input-outer input:focus ~ label {
+    top: 1.5px;
+  }
+
+  section.trending .container {
+    gap: 26px;
+  }
+  section.trending .container .trending-card {
+    height: 130px;
+  }
+  section.trending .container .trending-card .counter {
+    bottom: -15px;
+    left: -16px;
+    font-size: 50px;
+  }
+
+  section.joining-reasons .container .reason-card span:nth-child(2) {
+    font-size: 13px;
+  }
+
+  .subscription > div > div:nth-child(2) {
+    display: block;
+    margin-bottom: 70px;
+  }
+  .subscription > div > div:nth-child(2) > * {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .subscription > div > div:nth-child(2) button {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .subscription .input-outer {
+    width: 100%;
+  }
+
+  footer > div > table {
+    font-size: 11px;
+  }
+
+  section, footer {
+    width: 95%;
+  }
+}
