@@ -79,7 +79,7 @@ Please ensure your code follows the style guide and passes any checks before sub
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Author: M. Zeeshan Ali
+## Author: CDH WebCraft
 ## Website: [https://cdhwebcraft.com/](https://cdhwebcraft.com/)
 ## Email: [shanigtech@gmail.com](mailto:shanigtech@gmail.com)
 ## GitHub: [@shanigtech](https://github.com/shanigtech)
