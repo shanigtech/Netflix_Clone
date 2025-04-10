@@ -49,7 +49,7 @@ To get this project up and running locally on your machine, follow these steps:
 
 ```bash
 cd netflix-clone
-
+```
 ## Usage
 
 Once you have the project set up, you can begin editing and customizing the website:
@@ -79,14 +79,7 @@ Please ensure your code follows the style guide and passes any checks before sub
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Author:
-M. Zeeshan Ali
-
-## Website:
-[https://cdhwebcraft.com/](https://cdhwebcraft.com/)
-
-## Email:
-[shanigtech@gmail.com](mailto:shanigtech@gmail.com)
-
-## GitHub:
-[@shanigtech](https://github.com/shanigtech)
+## Author: M. Zeeshan Ali
+## Website: [https://cdhwebcraft.com/](https://cdhwebcraft.com/)
+## Email: [shanigtech@gmail.com](mailto:shanigtech@gmail.com)
+## GitHub: [@shanigtech](https://github.com/shanigtech)
