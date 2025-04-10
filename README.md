@@ -44,3 +44,49 @@ To get this project up and running locally on your machine, follow these steps:
 1. Clone this repository:
    ```bash
    git clone https://github.com/shanigtech/netflix-clone.git
+
+### Navigate into the project directory:
+
+```bash
+cd netflix-clone
+
+## Usage
+
+Once you have the project set up, you can begin editing and customizing the website:
+
+- **Text Customization**: Modify the text content in the HTML files (e.g., in the hero section, movie descriptions, etc.).
+
+- **Image Customization**: Replace images in the `assets` folder to update the visuals of the movie posters or other elements.
+
+- **Layout Modifications**: Adjust the layout by editing the styles in the `styles.css` file. You can tweak Flexbox properties, grid layout, and other CSS styles to modify the look and feel.
+
+## Technologies Used
+
+- **HTML5**: Markup for the structure of the website.
+- **CSS3**: Styling of the website, including Flexbox, Grid, and media queries for responsiveness.
+
+## Contributing
+
+1. Fork the repository.
+2. Create your branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a pull request to merge your changes.
+
+Please ensure your code follows the style guide and passes any checks before submitting a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author:
+M. Zeeshan Ali
+
+## Website:
+[https://cdhwebcraft.com/](https://cdhwebcraft.com/)
+
+## Email:
+[shanigtech@gmail.com](mailto:shanigtech@gmail.com)
+
+## GitHub:
+[@shanigtech](https://github.com/shanigtech)
